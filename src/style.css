@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 98vh;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 832px;
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-photo img {
+    height: 28px;
+    border-radius: 32px;
+}
+
+.profile-information {
+    margin: 8px 16px;
+}
+
+.profile-information h3 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.profile-information p {
+    font-weight: 500;
+    margin: 0;
+    opacity: 50%;
+}
+
+.profile-description h2 {
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.profile-description p {
+    font-weight: 500;
+    opacity: 70%;
+}
+
+.box.large {
+    width: 532px;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 16px 32px;
+}
+
+.box.large.violet {
+    background-color: hsl(263, 55%, 52%);
+}
+
+.box.large.darkblue {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.box.short {
+    width: 252px;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 16px 32px;
+}
+
+.box.short.gray {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.box.short.white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.box.vertical {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    width: 248px;
+    margin: 12px;
+    padding: 16px 32px;
+}
+
+.box.font-white {
+    color: hsl(210, 46%, 95%);
+}
+
+.box.font-blue {
+    color: hsl(217, 19%, 35%);
+}
