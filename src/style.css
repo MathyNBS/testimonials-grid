@@ -38,12 +38,14 @@ main {
 }
 
 .profile-information h3 {
+    font-size: 13px;
     font-weight: 500;
     margin: 0;
 }
 
 .profile-information p {
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: 400;
     margin: 0;
     opacity: 50%;
 }
@@ -54,6 +56,7 @@ main {
 }
 
 .profile-description p {
+    line-height: 1.4;
     font-weight: 500;
     opacity: 70%;
 }
@@ -63,6 +66,21 @@ main {
     border-radius: 8px;
     margin: 12px;
     padding: 16px 32px;
+}
+
+.box.large.violet {
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-size: 100px;
+}
+
+.box.large.violet img {
+    border:2px solid #a17ed0
+}
+
+.box.large.darkblue img {
+    border: 2px solid hsl(263, 55%, 52%);
 }
 
 .box.large.violet {
@@ -93,9 +111,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     border-radius: 8px;
-    width: 248px;
+    width: 256px;
     margin: 12px;
     padding: 16px 32px;
+    max-height: 552px;
 }
 
 .box.font-white {
@@ -104,4 +123,54 @@ main {
 
 .box.font-blue {
     color: hsl(217, 19%, 35%);
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box.large {
+        width: 375px;
+    }
+
+    .box.short {
+        width: 375px;
+    }
+
+    .box.vertical {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box.large.violet {
+        background-position-x: 90%;
+        width: 340px;
+        padding: 16px 32px;
+    }
+    
+    .box.large.darkblue {
+        width: 340px;
+        padding: 16px 32px;
+    }
+
+    .box.short {
+        width: 340px;
+        padding: 16px 32px;
+    }
+
+    .box.vertical {
+        width: 340px;
+        padding: 16px 32px;
+    }
 }
